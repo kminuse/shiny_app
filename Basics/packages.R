@@ -12,6 +12,7 @@ install.packages("ggplot2") #data visualization
 install.packages("dplyr") #data manipulation
 install.packages("readr")
 install.packages("usethis") # github identification
+install.packages("knitr")
 
 # initiate packages
 
@@ -27,3 +28,4 @@ library(ggplot2) #data visualization
 library(dplyr)
 library(readr)
 library(usethis) # github identification
+library(knitr)
