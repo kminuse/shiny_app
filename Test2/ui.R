@@ -6,7 +6,7 @@
 
 # load packaged
 library(shiny)
-#library(shinythemes)
+library(shinythemes)
 #library(knitr)
 
 
