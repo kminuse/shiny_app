@@ -26,6 +26,7 @@ runExample("11_timer")      # an automated timer
 
 
 ## Install R and RStudio on your server
+lululululu
 
 ## Access staging (8787) and production (3737)
 
