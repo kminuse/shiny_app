@@ -15,7 +15,6 @@ install.packages("usethis") # github identification
 install.packages("knitr")
 
 # initiate packages
-
 library(shiny)
 library(shinythemes)
 library(tidyverse)
