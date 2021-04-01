@@ -1,6 +1,4 @@
 library(shiny)
-library(shinythemes)
-library(knitr)
 
 # Define server function
 shinyServer(function(input, output) {
