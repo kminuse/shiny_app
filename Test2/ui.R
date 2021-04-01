@@ -7,7 +7,7 @@
 # load packaged
 library(shiny)
 library(shinythemes)
-#library(knitr)
+library(knitr)
 
 
 #Define UI
