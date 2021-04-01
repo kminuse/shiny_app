@@ -2,6 +2,8 @@
 
 # packages
 library(shiny)
+library(usethis)
+use_git_config(user.name = "kminuse", user.email = "konstantin.escher@onefootball.com")
 
 ui <- fluidPage(
   titlePanel("Welcome to my website"),
