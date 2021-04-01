@@ -26,7 +26,7 @@ shinyUI(fluidPage(theme = shinytheme("cerulean"),
                                     ) # mainPanel
                            ), #Navbar 1, tabPanel
                            tabPanel("Navbar 2", "This panel is intentionally left blank"),
-                           tabPanel("Navbar 3", "This panel is intentionally left blank"),
+                           tabPanel("Navbar 3", "This panel is intentionally left blank")
                            #tabPanel("Documentation", 
                           #          uiOutput("markdown")
                            ) #fluidPage    
