@@ -1,3 +1,6 @@
+library(shiny)
+library(shinythemes)
+library(knitr)
 
 # Define server function
 server <- function(input, output) {
