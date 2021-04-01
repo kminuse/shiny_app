@@ -11,7 +11,7 @@ library(knitr)
 
 
 #Define UI
-ui <- fluidPage(theme = shinytheme("cerulean"),
+shinyUI(fluidPage(theme = shinytheme("cerulean"),
                 navbarPage("Learning Shiny",
                            tabPanel("Navbar 1",
                                     sidebarPanel(
@@ -32,4 +32,4 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
                            ) #fluidPage    
                            
                 ) #navbarPage
-) #fluidPage
+)) #fluidPage
