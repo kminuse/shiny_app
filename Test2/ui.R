@@ -17,19 +17,19 @@ shinyUI(fluidPage(theme = shinytheme("cerulean"),
                                     sidebarPanel(
                                       tags$h3("Wie heißt du?"),
                                       textInput("txt1", "Vorname:", ""), # txt1 will be sent to the server
-                                      textInput("txt2", "Nachname:", ""), # txt2 will be sent to the server
+                                      textInput("txt2", "Nachname:", "") # txt2 will be sent to the server
                                     ), #sidebarPanel
                                     mainPanel(
                                       h1("Voll-Sweet-ometer"),
                                       h4("Finde heraus, wer voll sweet ist. Yeah!"),
-                                      verbatimTextOutput("txtout"), # txtout is generated from the server
+                                      verbatimTextOutput("txtout") # txtout is generated from the server
                                     ) # mainPanel
                            ), #Navbar 1, tabPanel
                            tabPanel("Navbar 2", "This panel is intentionally left blank"),
                            tabPanel("Navbar 3", "This panel is intentionally left blank"),
-                           #tabPanel("Documentation", 
-                          #          uiOutput("markdown")
-                           ) #fluidPage    
+                           tabPanel("Documentation", 
+                                    uiOutput("markdown")
+                           ) #tabPanel   
                            
                 ) #navbarPage
-) #fluidPage
+)) #fluidPage
