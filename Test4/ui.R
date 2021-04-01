@@ -10,15 +10,13 @@ library(shiny)
 #Define UI
 shinyUI(fluidPage(
   
-  titlePanel("Voll-Sweet-ometer"),
+  titlePanel("Voll-Sweet-Ometer"),
   
   sidebarPanel(
-    tags$h3("Wie heißt du?"),
-    textInput("txt1", "Name:", "")
-    ), #sidebarPanel
-  sidebarPanel(
-    h4("Finde heraus, wer voll sweet ist. Yeah!"),
-    verbatimTextOutput("txtout")
+    tags$h3("Finde heraus, wer voll sweet ist. Yeah!"),
+    textInput("txt1", "Wie heißt du?", ""),
+    verbatimTextOutput("txtout"),
+    width = 7
     ) # mainPanel
                            
                 ) #navbarPage
