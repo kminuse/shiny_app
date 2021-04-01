@@ -6,8 +6,8 @@
 
 # load packaged
 library(shiny)
-library(shinythemes)
-library(knitr)
+#library(shinythemes)
+#library(knitr)
 
 
 #Define UI
@@ -27,9 +27,9 @@ shinyUI(fluidPage(theme = shinytheme("cerulean"),
                            ), #Navbar 1, tabPanel
                            tabPanel("Navbar 2", "This panel is intentionally left blank"),
                            tabPanel("Navbar 3", "This panel is intentionally left blank"),
-                           tabPanel("Documentation", 
-                                    uiOutput("markdown")
+                           #tabPanel("Documentation", 
+                          #          uiOutput("markdown")
                            ) #fluidPage    
                            
                 ) #navbarPage
-)) #fluidPage
+) #fluidPage
