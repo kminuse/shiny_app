@@ -7,6 +7,10 @@
 # load packaged
 library(shiny)
 
+### READ: https://community.rstudio.com/t/avoid-temporary-error-messages-in-shiny-outputs-that-are-waiting-on-updateselectinput/9424/3
+
+
+
 #Define UI
 shinyUI(fluidPage(
   
@@ -16,8 +20,15 @@ shinyUI(fluidPage(
     tags$h3("Finde heraus, wer voll sweet ist. Yeah!"),
     textInput("txt1", "Wie heißt du?", ""),
     verbatimTextOutput("txtout"),
-    width = 7
-    ) # mainPanel
-                           
-                ) #navbarPage
+    width = 9),
+  
+  sidebarPanel(
+    tags$h3("Wann bist du geboren?"),
+    tags$h4("Gib jeweils die Zahl an."),
+    textInput("day", "Tag", ""),
+    textInput("month", "Monat", ""),
+    textInput("year", "Jahr", ""),
+    verbatimTextOutput("birthday_output"),
+    width = 9)
+) #navbarPage
 ) #fluidPage
