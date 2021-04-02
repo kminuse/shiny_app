@@ -24,7 +24,7 @@ shinyUI(fluidPage(
     width = 9),
   
   sidebarPanel(
-    tags$h3("For how many days are you alive?"),
+    tags$h3("Find out on what weekday you were born. Yeah!"),
     tags$h4("Type in the number."),
     textInput("day", "Day", ""),
     textInput("month", "Month", ""),
