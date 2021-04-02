@@ -15,20 +15,20 @@ library(shiny)
 shinyUI(fluidPage(
   
   titlePanel(
-    tags$h1("Voll-Sweet-Ometer")),
+    tags$h1("Super-Sweet-O-Meter")),
   
   sidebarPanel(
-    tags$h3("Finde heraus, wer voll sweet ist. Yeah!"),
-    textInput("txt1", "Wie heißt du?", ""),
+    tags$h3("Find out how sweet someone is. Yeah!"),
+    textInput("txt1", "What is your name?", ""),
     verbatimTextOutput("txtout"),
     width = 9),
   
   sidebarPanel(
-    tags$h3("Wie viele Tage bist du alt?"),
-    tags$h4("Gib jeweils die Zahl an."),
-    textInput("day", "Tag", ""),
-    textInput("month", "Monat", ""),
-    textInput("year", "Jahr", ""),
+    tags$h3("For how many days are you alive?"),
+    tags$h4("Type in the number."),
+    textInput("day", "Day", ""),
+    textInput("month", "Month", ""),
+    textInput("year", "Year", ""),
     verbatimTextOutput("birthday_output"),
     width = 9)
 ) #navbarPage

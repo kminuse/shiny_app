@@ -6,7 +6,7 @@ shinyServer(function(input, output) {
 
   output$txtout <- renderText({
     if (input$txt1 != "") {
-      paste("Ey", input$txt1, "ist voll sweet!", sep = " ")
+      paste("Ey", input$txt1, "is super sweet!", sep = " ")
     }
   })
   
@@ -16,7 +16,9 @@ shinyServer(function(input, output) {
       start <- as.Date(birthday_input, tryFormats = c("%Y-%m-%d", "%YYYY-%mm-%dd"))
       end <- as.Date(Sys.Date())
       difference <- end-start
-      paste("Du bist" ,difference, "Tage jung. Voll sweet!", sep = " ")
+      weekday <- weekdays(start)
+      
+      paste("You are" ,difference, "days young. Super sweet!","You were born on a",weekday,":-)")
     } else {
       print("")
     }
