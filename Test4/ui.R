@@ -14,7 +14,8 @@ library(shiny)
 #Define UI
 shinyUI(fluidPage(
   
-  titlePanel("Voll-Sweet-Ometer"),
+  titlePanel(
+    tags$h1("Voll-Sweet-Ometer")),
   
   sidebarPanel(
     tags$h3("Finde heraus, wer voll sweet ist. Yeah!"),
@@ -23,7 +24,7 @@ shinyUI(fluidPage(
     width = 9),
   
   sidebarPanel(
-    tags$h3("Wann bist du geboren?"),
+    tags$h3("Wie viele Tage bist du alt?"),
     tags$h4("Gib jeweils die Zahl an."),
     textInput("day", "Tag", ""),
     textInput("month", "Monat", ""),
