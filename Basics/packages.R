@@ -14,6 +14,7 @@ install.packages("readr")
 install.packages("usethis") # github identification
 install.packages("knitr")
 install.packages("googlesheets4")
+install.packages("markdown")
 
 # initiate packages
 library(shiny)

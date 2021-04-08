@@ -9,24 +9,42 @@ shinyUI(fluidPage(theme = shinytheme("simplex"),
     
     navbarPage("Konstantin Escher",
 
-#### About Page ####                              
-               tabPanel("About",
-                        titlePanel("About"),
-                        
+#### MENU About ####                              
+               navbarMenu("About",
+
+#### Resume ####                   
+                          
+                tabPanel("Resume",
+                   titlePanel("Resume")),        
+
+#### Contact ####                   
+
+                tabPanel("Contact",
+                    titlePanel("Contact"))    
                         
                ),
 
 
-#### Blog Page ####                   
+#### Blog ####                   
                tabPanel("Blog",
-                        titlePanel("Blog"),
+                        titlePanel("Blog")
                         
                         
                 ),
                
-#### Learning Shiny Page ####                   
-               tabPanel("Learning Shiny",
-                        titlePanel("Learning Shiny"),
+#### MENU Learning Shiny #### 
+
+                navbarMenu("Learning Shiny",
+
+
+#### Shiny Basics #### 
+                    tabPanel("Basics",
+                        titlePanel("Shiny Basics")),
+
+
+#### Shiny Experiments ####                     
+                    tabPanel("Experiments",
+                             titlePanel("Shiny Experiments"))
             
                 )
                
