@@ -13,6 +13,7 @@ install.packages("dplyr") #data manipulation
 install.packages("readr")
 install.packages("usethis") # github identification
 install.packages("knitr")
+install.packages("googlesheets4")
 
 # initiate packages
 library(shiny)
@@ -28,3 +29,4 @@ library(dplyr)
 library(readr)
 library(usethis) # github identification
 library(knitr)
+library(googlesheets4)
