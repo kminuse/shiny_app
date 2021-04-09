@@ -9,13 +9,17 @@
 library(dplyr)
 
 # load activity data
-df <- read.csv("activities.csv", sep = ",", header = T)
+setwd("~/Sh/portfolio")
+df <- read.csv("./data/activities.csv", sep = ",", header = T)
 
 # reduce complexity of data
 df <- select(df, Activity.ID,
               Activity.Date,
-              Elapsed.Time,
+              Distance,
               Moving.Time,
               Max.Speed)
 
-# 
+
+# formatting data
+df$Activity.Date <- as.POSIXct(df$Activity.Date,format="%b %d, %Y, %H:%M:%S %p")
+df$Moving.Time <- df$Moving.Time/60

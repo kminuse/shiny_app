@@ -74,8 +74,8 @@ shinyUI(fluidPage(theme = shinytheme("simplex"),
                         titlePanel("Shiny Basics")),
 
 
-#### Shiny Experiments ####                     
-                    tabPanel("Experiments",
+#### Shiny Experiments: Dummy Data ####                     
+                    tabPanel("Dummy Data",
                              fluidPage(
                                titlePanel("Shiny Experiments"),
                                
@@ -104,9 +104,27 @@ shinyUI(fluidPage(theme = shinytheme("simplex"),
                                  column(3, verbatimTextOutput("ttest"))
                                )
                              )
-                             )
+                             ),
             
+#### Shiny Experiments: Runs on Strava ####    
+
+                      tabPanel("Runs on Strava",
+                               fluidPage(
+                                titlePanel("Runs on Strava"),
+                                
+                                sidebarPanel(
+                                  p("Lorem lorem")
+                                )
+                                
+                                
+                                )
+                      )
+
+
                 )
+
+
+           
                
                
                
