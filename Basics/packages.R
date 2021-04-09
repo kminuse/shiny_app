@@ -15,6 +15,9 @@ install.packages("usethis") # github identification
 install.packages("knitr")
 install.packages("googlesheets4")
 install.packages("markdown")
+install.packages("httr")
+install.packages("jsonlite")
+install.packages("yaml")
 
 # initiate packages
 library(shiny)
@@ -31,3 +34,6 @@ library(readr)
 library(usethis) # github identification
 library(knitr)
 library(googlesheets4)
+library(httr)
+library(jsonlite)
+library(yaml)
