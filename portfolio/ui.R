@@ -4,6 +4,7 @@ library(shiny)
 library(markdown)
 library(shinythemes)
 library(ggplot2)
+library(knitr)
 
 
 
@@ -71,7 +72,9 @@ shinyUI(fluidPage(theme = shinytheme("simplex"),
 
 #### Shiny Basics #### 
                     tabPanel("Basics",
-                        titlePanel("Shiny Basics")),
+                        titlePanel("Shiny Basics"),
+                        uiOutput('markdown')
+                        ),
 
 
 #### Shiny Experiments: Dummy Data ####                     

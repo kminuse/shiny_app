@@ -18,6 +18,10 @@ install.packages("markdown")
 install.packages("httr")
 install.packages("jsonlite")
 install.packages("yaml")
+install.packages("tidyr")
+install.packages("chron")
+install.packages("knitr")
+
 
 # initiate packages
 library(shiny)
@@ -37,3 +41,5 @@ library(googlesheets4)
 library(httr)
 library(jsonlite)
 library(yaml)
+library(tidyr)
+library(chron)
