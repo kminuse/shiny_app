@@ -72,8 +72,8 @@ shinyUI(fluidPage(theme = shinytheme("simplex"),
 
 #### Shiny Basics #### 
                     tabPanel("Basics",
-                        titlePanel("Shiny Basics"),
-                        uiOutput('markdown')
+                        titlePanel("Shiny Basics")
+                        #includeHTML("basics_of_shiny.html")
                         ),
 
 

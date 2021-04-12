@@ -37,9 +37,5 @@ shinyServer(function(input, output, session) {
       
       t_test(x1, x2)
     })
-    
-    output$markdown <- renderUI({
-      HTML(markdown::markdownToHTML(knit('basics_of_shiny.Rmd', quiet = TRUE)))
-    })
   
 })
