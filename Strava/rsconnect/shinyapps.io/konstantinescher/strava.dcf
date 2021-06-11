@@ -1,0 +1,13 @@
+name: strava
+title:
+username:
+account: konstantinescher
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4257449
+bundleId: 4705048
+url: https://konstantinescher.shinyapps.io/strava/
+when: 1623412769.09963
+lastSyncTime: 1623412769.09964
+asMultiple: FALSE
+asStatic: FALSE
