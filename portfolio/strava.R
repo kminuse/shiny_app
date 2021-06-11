@@ -5,6 +5,12 @@
 # Read: https://github.com/fawda123/rStrava
 
 
+
+
+
+
+
+
 # Loading packages
 library(ggplot2)
 library(dplyr)
